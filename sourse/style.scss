@@ -200,6 +200,164 @@
     }
 }
 
+.block-write {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: #13baba;
+    font-size: 20px;
+}
+
+.price {
+    background: #13baba5e;
+
+    &__content {
+        max-width: 1000px;
+        margin: 0px auto;
+        padding: 10px 0;
+
+    }
+
+    &__title {
+        font-size: 25px;
+        color: #503b56;
+        font-weight: 800;
+        text-align: center;
+        text-shadow: 2px 2px 20px #199e9e;
+
+    }
+
+    &__cost {
+        font-size: 20px;
+        line-height: 25px;
+        margin: 10px 0 0 0;
+        color: #fff;
+        text-align: center;
+        text-shadow: 2px 2px 10px #000;
+
+    }
+}
+
+.rewiew {
+    padding: 10px;
+    &__content {
+    }
+
+    &__title {
+        font-size: 25px;
+        color: #503b56;
+        font-weight: 800;
+        text-align: center;
+        text-shadow: 2px 2px 20px #199e9e;
+
+    }
+}
+
+.contact {
+    background: #13baba5e;
+
+    &__title {
+        padding: 10px;
+        font-size: 25px;
+        color: #503b56;
+        font-weight: 800;
+        text-align: center;
+        text-shadow: 2px 2px 20px #199e9e;
+
+    }
+
+    &__content {
+        max-width: 1000px;
+        display: flex;      
+        margin: 0px auto;
+        padding: 10px 0;
+        justify-content: center;
+
+    }
+
+    &__map {
+        flex: 0 0 50%;
+    }
+
+    &__text {
+        flex: 0 0 50%;
+    }
+}
+.map {
+
+    &__title {
+        font-size: 16px;
+        color: #503b56;
+        font-weight: 600;
+        text-align: center;
+        text-shadow: 2px 2px 20px #199e9e;
+
+    }
+
+    &__map {
+    }
+}
+.getInTouchWith {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 10px 0 0 0;
+    color: #fff;
+    text-align: left;
+    text-shadow: 2px 2px 10px #000;
+
+
+    &__adress {
+        position: relative;
+        padding: 0 0 0 28px;
+        &::before{
+            content: "";
+            position:absolute;
+            top: 0;
+            left:0;
+            display: block;
+            width: 25px;
+            height: 25px;
+            background: url(../img/contack__map.png) 0 0/contain no-repeat;
+        }
+    }
+
+    &__inst {
+        position: relative;
+        padding: 10px 0 10px 28px;
+        &::before{
+            content: "";
+            position:absolute;
+            top: 6px;
+            left:-4px ;
+            display: block;
+            width: 33px;
+            height: 33px;
+            background: url(../img/contack__insta.png) 0 0/cover no-repeat;
+        }
+        a {
+            color: #fff;
+        }
+
+    }
+
+    &__phone {
+        position: relative;
+        padding: 0 0 0 28px;
+        &::before{
+            content: "";
+            position:absolute;
+            top: 0;
+            left:0;
+            display: block;
+            width: 25px;
+            height: 25px;
+            background: url(../img/contack__phone.png) 0 0/contain no-repeat;
+        }
+
+    }
+}
+
+
 .footer {
     display: flex;
     justify-content: center;
@@ -268,6 +426,12 @@
                 background: #fff;
             }
     }
+
+    .sertificat {
+        &__item {
+            flex: 1 0 120px;
+        }
+    }
     .main {
 
         &__text{
@@ -300,5 +464,16 @@
         }
     }
 
+    .about__img {
+        display: none;
+    }
+    .contact {
+        &__content {
+            flex-direction: column;
+            
+    }}
+    .getInTouchWith {
+        font-size: 14px;
+    }
 
 }
